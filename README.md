@@ -8,7 +8,7 @@ All the figures and statistics are generated in these notebooks
 Notebook                           | Figures        | Description           |
 :---------------------------------------------|:-------------  |:----------------------|
 data_sources                                | NA        | Lists the data sources used for this project |
-01_assess_TCGA_antibodies                   | Figure 1  |  |
+01_assess_TCGA_antibodies                   | Figure 1  | Assess the antibodies used for THE TCGA Pan-Cancer RPPA studies |
 02a_assess_mRNA_RPPA_cor (TCGA PanCancer)   | Figure 2  | Investigate the mRNA-protein correlation for TCGA Pan-Cancer studies with respect to antibody validation status |
 02b_assess_mRNA_MS_correlation              | Figure 3  | Investigate the mRNA-protein correlation for CPTAC studies with respect to antibody validation status |
 02c_validate_results_using_LR               | Figure S1 | Perform Linear regression to understand the variance in mRNA-protein correlation that is explained by antibody validation status |
