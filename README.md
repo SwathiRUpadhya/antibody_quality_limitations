@@ -1,4 +1,4 @@
-# Antibody validation status  influences mRNA-protein correlation #
+# Antibody reliability influences observed mRNA-protein correlations in tumours #
 
 
 ### Data analysis overview:
