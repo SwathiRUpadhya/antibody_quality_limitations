@@ -35,6 +35,20 @@ def draw_swarmBoxPlot(dataframe, study, ax, args, order, test='Mann-Whitney', ad
     
     customise_plot(ax, args)
     
+def draw_dotplot(ax, x, y, data, order, hue, args, hue_order=None, jitter=0.1, xlim=(0.49, 0.75)):
+    sns.stripplot(x=x, y=y, data=data, hue=hue, ax=ax, order=order, palette=args.palette, s=7, hue_order=hue_order,
+                  jitter=jitter, alpha=0.85)
+#     if(args.show_legend):
+#         ax.legend(title=args.legend_title, title_fontsize='medium', facecolor='white', framealpha=1,
+#                   bbox_to_anchor = args.anchor_legend_at)._legend_box.align = "left"
+#     else: 
+#         ax.legend().remove()
+    if(args.ylab =='False'): 
+        ax.set(yticklabels=[])
+    ax.set_title(args.title, fontsize=12)
+    ax.set(xlim=xlim)
+    customise_plot(ax, args)
+    
 def get_pvalue_to_annotate(boxdata1, boxdata2, test='Mann-Whitney'):
     if(test == 'Mann-Whitney'):
         stat, P_val = mannwhitneyu(boxdata1, boxdata2, alternative='two-sided')
