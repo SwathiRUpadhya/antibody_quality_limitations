@@ -1,18 +1,21 @@
 name: antibody_quality_limitations
+channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.8
-  - numpy
-  - pandas
-  - matplotlib
-  - seaborn
+  - pip
+  - beautifulsoup4
+  - requests
   - statsmodels
-  - scipy
+  - python=3.8
+  - matplotlib
+  - pandas
+  - seaborn
   - notebook
   - xlsxwriter
-  - requests
-  - beautifulsoup4
-  - pip
+  - numpy
+  - scipy
+  - openpyxl
+  - scikit-learn
 variables:
   DATA_PATH: G:\My Drive\external_data
